@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*  Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embed-opentype
+            - truetype-aat (Apple Advanced Typography)  */
+        @font-face {
+            font-family: 'Typewriter';
+            src: url('typewriter.ttf') format('truetype'),
+            url('typewriter.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Love Story';
+            src: url('loveStory.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love Story', 'Typewriter', 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nam eveniet accusantium eaque minus aut sint ducimus veniam neque assumenda, eum impedit nemo ipsum. Expedita assumenda facere officia perspiciatis sunt.</p>
+</body>
+</html>

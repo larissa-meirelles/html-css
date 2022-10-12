@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root {
+    --cor0:#B5F6AB;
+    --cor1:#97ED8A;
+    --cor2:#168039;
+    --cor3:#044D29;
+    --cor4:#00261c;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid';
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+/*a.externo::after { content: '\00A0\1F517'; >> Chama a class do HTML e adiciona o emoji de link (corrente)*/
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.419);
+}
+
+header p {
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    color: white;
+    max-width: 500px;
+    padding: 0px 10px 10px 0px;
+    margin: auto;
+    border-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.419);
+}
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.259);
+}
+
+nav a {
+    color: #baffb092;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+}   
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main { 
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.382);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+main h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-android);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+main h2 {
+    color: var(--cor2);
+    font-family: var(--fonte-android);
+    font-size: 22px;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    padding: 2px 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+.video {
+    background-color: white;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 4%;
+    left: 3.5%;
+    width: 93%;
+    height: 93%;
+
+}
+.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside {
+    border-radius: 10px;
+    background-color: var(--cor0);
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+}
+
+aside ul {
+    columns: 2;
+    /*list-style-type: '\2714\00A0\00A0'; Adiciona emoji com marcador de lista; código 00A0 = espaço*/
+    /*list-style-position: inside; Põe os marcadores para dentro da margem do texto*/
+}
+aside h3 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    color: white;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor4); 
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2); 
+}
