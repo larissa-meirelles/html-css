@@ -4,16 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
-* {
-    margin: 0;
-    padding: 0; /* diferença */
-}    
-    
 :root {
     --font-padrão: Verdana, Geneva, Tahoma, sans-serif;  
     --font-cordel:'Cabin Sketch';
     --font-poema: 'Love Ya Like A Sister';
 }
+
+* {
+    margin: 0;
+    padding: 0; /* diferença */
+}    
+    
 
 html, body {
     min-height: 100%; 
