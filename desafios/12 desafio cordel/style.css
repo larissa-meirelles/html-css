@@ -80,11 +80,11 @@ section p {
 }
 
 #flor{
-    background: black url('imagens/background001.jpg') center right / cover fixed;
+    background: black url('imagens/background001.jpg') right center / cover fixed;
 }
 
 #carta{
-    background: black url('imagens/background002.jpg') center right / cover fixed;
+    background: black url('imagens/background002.jpg') right center / cover fixed;
 }
 
 footer {
