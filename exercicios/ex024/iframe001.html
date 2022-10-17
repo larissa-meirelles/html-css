@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+<!-- O iframe tem tamanho padrão 300x150
+     scrolling="auto/yes/no" -  'auto' é o padrão, se a página tiver conteúdo grande vai liberar a rolagem, assim como no 'yes'. Já em 'no' a página fica congelada no topo do site que está adicionado no iframe.   
+-->
+    <p>Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500px">
+        <a href="https://cursoemvideo.com" target="_blank">CursoemVideo</a> <!-- Adiciona um link caso o iframe não possa ser exibido, não deixando a página sem informação -->
+        </iframe> 
+        para aprender a programar.
+    </p>
+
+    <p>O repositório do Guanabara <iframe src="https:/gustavoguanabara.github.io" frameborder="0" width="500px" height="500px" scrolling="auto"></iframe>também é bem legal!</p>
+
+    <p>Testando com o <iframe src="https://google.com" frameborder="0"><a href="https://google.com" target="_blank">Google</a></iframe> as funcionalidades do exercício.</p>
+</body>
+</html>
