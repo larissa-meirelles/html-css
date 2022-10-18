@@ -6,7 +6,7 @@
 }
 
 body {
-    background: black url('imagens/fundo-madeira.jpg') top center / cover fixed;
+    background: black url('imagens/fundo-madeira.jpg') no-repeat top center / cover fixed;
     height: 100vh;
     width: 100vw;
     
@@ -18,10 +18,11 @@ main {
 
 iframe {
     display: block;
-    padding-top: 60px;
-    margin: auto;
-    height: 70vh;
-    width: 30vw;
+    position:absolute;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 267px;
 } 
 
 #phone {
@@ -34,10 +35,20 @@ iframe {
     background-image: url('imagens/frame-iphone.png');
 }
 
-
 #social-midia img {
     color: white;
     border-radius: 50%;
-    width: 55px;
-    padding: 15px;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#social-midia img:hover {
+    transform: translate(-5px, -5px);
+}
+
+section#social-midia {
+    text-align: right;
 }
