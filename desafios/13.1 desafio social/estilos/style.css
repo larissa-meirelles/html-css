@@ -15,13 +15,22 @@ main {
     position: relative;
     height: 100vh;
 }
+
+iframe#screen {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
 section#phone {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
     width: 311px;
     height: 627px;
-    transform: translate(-50%,-50%);
     background-image: url('../imagens/frame-iphone.png');
 }
 section#socialmidia {
