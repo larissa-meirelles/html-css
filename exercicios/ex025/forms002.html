@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+<!--ATRIBUTOS:
+    'required': obriga o user adicionar informação
+    'minlength': tamanho mínimo
+    'maxlength': tamanho máximo
+    'size': diminui tamnho da caixa, mas obedece a regra de maxlenght 
+    'placeholder': dica do que preencher em cada campo
+    'autocomplete: on': adicionado a tag form nos requisitos seguites adiciona-se autocomplete:new-password, por exemplo, então o formulário vai autocompletar os dados gravados.
+-->
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="30" size="15" placeholder="Nome do usuário">
+        </p>
+
+        <p>
+            <label for="ipass">Senha: </label>
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="16" size="20" placeholder=" Senha de 8 a 16 caracteres"> 
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

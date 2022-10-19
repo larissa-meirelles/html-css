@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+<!--
+    MÉTODOS PARA FORMULÁRIOS
+    Get (padrão, adiciona os elementos na URL) > para dados não-sensíveis, 3000 (bites) letras uso máximo de envio.
+    Post (não adiciona os elementos na URL) > para dados sensíveis, fotos, mais de 3000 (bites) letras.
+    
+    INPUT: TEXT (cria caixa de inserção de dados)
+    INPUT: SUBMIT (cria botão de envio)
+
+    LABEL: tag dá sentido e faz ligação entre o elemento e o campo de inserção de dados
+
+    
+--> 
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome"></p>
+
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
