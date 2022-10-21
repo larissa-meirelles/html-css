@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Testando Media Queries</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quibusdam unde impedit cupiditate doloribus minus distinctio deserunt reprehenderit excepturi dolorem illo, provident eos quam adipisci laborum perspiciatis nobis, saepe at.
+            Voluptas repellendus maiores fuga at labore. Culpa ex reiciendis totam! Saepe veritatis iusto esse itaque, deserunt labore quae, nostrum eligendi reiciendis ratione nemo iste laborum mollitia, unde ipsum blanditiis illum.</p>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolores, unde obcaecati cupiditate excepturi quod! Harum, aspernatur voluptate consequuntur tempore eveniet quo consequatur deserunt nisi provident vitae possimus tenetur earum.
+            Eligendi dolor temporibus deleniti debitis laborum sequi exercitationem quam dolorem officiis, tenetur iure velit veniam optio vitae aperiam voluptatibus hic repellendus, porro atque. Ipsam ab sequi quisquam dicta eius inventore.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cupiditate provident magni a. Iusto vel ducimus necessitatibus maxime architecto, suscipit hic similique qui culpa accusantium ipsa quam id saepe et!
+            Doloremque aliquid, eaque explicabo, libero molestias recusandae rem excepturi illo, dicta autem vero? Iure reprehenderit est facere culpa cumque sit deserunt? Temporibus quam cumque eos. Accusantium nobis magni quisquam odio?
+            Facere porro aspernatur dolorem sapiente. Distinctio, qui aut cupiditate veniam autem soluta corrupti mollitia repellendus nostrum impedit ab voluptas blanditiis aliquid cumque ex molestias fugit minus vero veritatis ea in.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
